@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="735.0" prefWidth="600.0" stylesheets="@../estiloscss/estilolabeltextFieldcss.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="proveedorControladorVistas.FXMLModificarProveedorController">
+    <children>
+        <Label layoutX="217.0" layoutY="21.0" text="Modificar Proveedor" />
+        <GridPane layoutX="115.0" layoutY="73.0" prefHeight="556.0" prefWidth="407.0">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="160.0" minWidth="10.0" prefWidth="133.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="274.0" minWidth="10.0" prefWidth="274.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            </rowConstraints>
+            <children>
+                <Label text="Identificador" />
+                <Label text="Nombre" GridPane.rowIndex="1" />
+                <Label text="NIF" GridPane.rowIndex="2" />
+                <Label text="Dirección" GridPane.rowIndex="3" />
+                <Label text="Teléfono" GridPane.rowIndex="4" />
+                <Label text="Pais" GridPane.rowIndex="5" />
+                <Label text="Provincia" GridPane.rowIndex="6" />
+                <TextField fx:id="identificador" disable="true" GridPane.columnIndex="1" />
+                <TextField fx:id="nombreProveedor" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                <TextField fx:id="nifProveedor" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                <TextField fx:id="direccionProveedor" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                <TextField fx:id="telefonoProveedor" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                <ComboBox fx:id="provinciaProveedor" prefHeight="47.0" prefWidth="274.0" promptText="Selecciona Provincia" stylesheets="@../estiloscss/estilocomboBoxcss.css" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                <TextField fx:id="pais" disable="true" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <Label text="Ciudad" GridPane.rowIndex="7" />
+            <Label text="Artículo" GridPane.rowIndex="8" />
+            <Label text="Precio" GridPane.rowIndex="9" />
+            <Label text="Cantidad" GridPane.rowIndex="10" />
+            <ComboBox fx:id="ciudadProveedor" prefHeight="47.0" prefWidth="275.0" promptText="Selecciona Ciudad" stylesheets="@../estiloscss/estilocomboBoxcss.css" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+            <TextField fx:id="articuloProveedor" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+            <TextField fx:id="precioProveedor" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+            <TextField fx:id="cantidadProveedor" GridPane.columnIndex="1" GridPane.rowIndex="10" />
+            </children>
+        </GridPane>
+      <GridPane layoutX="177.0" layoutY="648.0" prefHeight="51.0" prefWidth="269.0" stylesheets="@../estiloscss/buttonestilocss.css">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+              <Button mnemonicParsing="false" prefHeight="42.0" prefWidth="116.0" text="Modificar" />
+              <Button mnemonicParsing="false" prefHeight="42.0" prefWidth="116.0" text="Eliminar" GridPane.columnIndex="1" />
+         </children>
+      </GridPane>
+    </children>
+</AnchorPane>

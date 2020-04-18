@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="637.0" prefWidth="1252.0" stylesheets="@../estiloscss/estilolabeltextFieldcss.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="empleadoControladoresVista.FXMLModificarEliminarEmpleadoController">
+    <children>
+        <TableView layoutY="154.0" prefHeight="482.0" prefWidth="1252.0" stylesheets="@../estiloscss/estilosTableView.css">
+            <columns>
+                <TableColumn fx:id="nombre" prefWidth="178.0" text="Nombre" />
+                <TableColumn fx:id="apellido" prefWidth="262.0" text="Apellidos" />
+                <TableColumn fx:id="dni_nie" prefWidth="137.0" text="DNI/NIE" />
+                <TableColumn fx:id="email" prefWidth="346.0" text="E-mail" />
+                <TableColumn fx:id="codJefe" prefWidth="151.0" text="Codigo Jefe" />
+                <TableColumn fx:id="puesto" minWidth="0.0" prefWidth="174.0" text="Puesto" />
+            </columns>
+        </TableView>
+        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="240.0" layoutY="14.0" prefHeight="43.0" prefWidth="673.0" text="Modificar / Eliminar Empleado">
+         <font>
+            <Font size="29.0" />
+         </font></Label>
+        <TextField fx:id="identificador" layoutX="114.0" layoutY="89.0" prefHeight="42.0" prefWidth="251.0" promptText="IDENTIFICADOR / DNI NIE" />
+      <Button fx:id="buscar" layoutX="14.0" layoutY="89.0" mnemonicParsing="false" stylesheets="@../estiloscss/buttonestilocss.css" text="Buscar" />
+    </children> 
+</AnchorPane>

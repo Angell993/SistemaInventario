@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="637.0" prefWidth="1264.0" stylesheets="@../estiloscss/estilosTableView.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="clienteControladorVistas.FXMLModificarEliminarClienteController">
+   <children>
+      <TableView layoutY="179.0" prefHeight="457.0" prefWidth="1264.0">
+        <columns>
+          <TableColumn fx:id="dni_nie" prefWidth="89.0" text="DNI/NIE" />
+          <TableColumn fx:id="nombre" prefWidth="114.0" text="Nombre" />
+            <TableColumn fx:id="apellidos" prefWidth="122.0" text="Apellidos" />
+            <TableColumn fx:id="telefono" prefWidth="103.0" text="Teléfono" />
+            <TableColumn fx:id="provincia" prefWidth="116.0" text="Provincia" />
+            <TableColumn fx:id="ciudad" prefWidth="109.0" text="Ciudad" />
+            <TableColumn fx:id="direccion" prefWidth="207.0" text="Dirección" />
+            <TableColumn fx:id="cp" minWidth="0.0" prefWidth="123.0" text="CP" />
+            <TableColumn fx:id="email" prefWidth="270.0" text="E-mail" />
+        </columns>
+      </TableView>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="335.0" layoutY="26.0" prefHeight="43.0" prefWidth="505.0" styleClass="top-line" text="Modificar / Eliminar  Cliente">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Label>
+      <TextField layoutX="107.0" layoutY="100.0" promptText="DNI/NIE-IDENTIFICADOR" />
+      <Button fx:id="buscar" layoutX="14.0" layoutY="101.0" mnemonicParsing="false" stylesheets="@../estiloscss/buttonestilocss.css" text="Buscar" />
+   </children>
+</AnchorPane>

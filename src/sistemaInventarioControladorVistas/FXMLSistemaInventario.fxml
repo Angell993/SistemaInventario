@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="728.0" prefWidth="1258.0" stylesheets="@../estiloscss/SistemaInventarioCss.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sistemaInventarioControladorVistas.FXMLSistemaInventarioController">
+    <children>
+        <MenuBar layoutY="60.0" prefHeight="50.0" prefWidth="1012.0" AnchorPane.bottomAnchor="618.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="137.0" AnchorPane.topAnchor="60.0">
+            <menus>
+                <Menu mnemonicParsing="false" text="Clientes">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#registrarCliente" text="Registar" />
+                        <MenuItem mnemonicParsing="false" onAction="#modificarEliminarCliente" text="Modificar / Eliminar" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Ventas">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#registrarVentas" text="Registar" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Articulos">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#registrarArticulo" text="Registar" />
+                        <MenuItem mnemonicParsing="false" onAction="#modificarEliminarArticulo" text="Modificar / Eliminar" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Proveedor">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#registrarProveedor" text="Registar" />
+                        <MenuItem mnemonicParsing="false" onAction="#modificarEliminarProveedor" text="Modificar / Eliminar" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Devolucion">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="Registar" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Reportes" />
+                <Menu mnemonicParsing="false" text="Empleado">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#registrarEmpleado" text="Registar" />
+                        <MenuItem mnemonicParsing="false" onAction="#modificarEliminarEmpleado" text="Modificar / Eliminar" />
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+      <AnchorPane fx:id="rootPane" layoutY="110.0" prefHeight="618.0" prefWidth="1215.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="110.0" />
+      <Button alignment="TOP_CENTER" layoutX="1117.0" layoutY="60.0" mnemonicParsing="false" onAction="#calculadora" prefHeight="50.0" prefWidth="141.0" stylesheets="@../estiloscss/buttonestilocss.css" text="Calculadora" AnchorPane.leftAnchor="1117.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="60.0" />
+      <AnchorPane fx:id="cabezeraRootPane" layoutY="-3.0" prefHeight="62.0" prefWidth="1258.0">
+         <children>
+            <Label fx:id="identificador" alignment="CENTER" layoutX="433.0" layoutY="10.0" prefHeight="42.0" prefWidth="232.0" styleClass="top-line" AnchorPane.leftAnchor="433.0" AnchorPane.rightAnchor="484.0">
+               <font>
+                  <Font size="21.0" />
+               </font></Label>
+            <Label fx:id="fecha" alignment="CENTER" layoutX="1102.0" layoutY="10.0" prefHeight="42.0" prefWidth="125.0" styleClass="top-line">
+               <font>
+                  <Font size="21.0" />
+               </font></Label>
+         </children>
+      </AnchorPane>
+    </children>
+</AnchorPane>
